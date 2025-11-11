@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Bootstrap Ejemplo</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Designs by Fernanda</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-1 mb-lg-0 me-1">
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/acercade.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/carrito.html">Carrito</a>
+              </li>
+            </ul>
+            <a href="./pages/reservar.html"
+              ><button class="btn btn-reservar">Reservar</button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--este es mi hero-->
+      <section class="hero img">
+        <!--aqui pondre el contenido de la cabecera-->
+        <img src="./assets/image/hero.jpg" alt="cabecera--" />
+      </section>
+      <!-- aqui pondre mi seccion de productos destacados -->
+
+      <section class="productos-destacados">
+        <div class="titulo-boton">
+          <h1>Productos destacados</h1>
+          <a href="./pages/tienda.html"
+            ><button class="ver-todo">VER TODO</button></a
+          >
+        </div>
+
+        <div class="contenedor-productos">
+          <div class="tarjeta">
+            <img src="./assets/image/producto1.jpeg" alt="Producto-1" />
+            <h3>Nombre del producto</h3>
+            <p>$25,00</p>
+          </div>
+
+          <div class="tarjeta">
+            <img src="./assets/image/producto2.jpeg" alt="Producto-2" />
+            <h3>Nombre del producto</h3>
+            <p>$25,00</p>
+          </div>
+
+          <div class="tarjeta">
+            <img src="./assets/image/producto3.jpeg" alt="Producto-3" />
+            <h3>Nombre del producto</h3>
+            <p>$25,00</p>
+          </div>
+
+          <div class="tarjeta">
+            <img src="./assets/image/productooferta.jpg" alt="Producto-4" />
+            <h3>Nombre del producto</h3>
+            <p>$20,00 <span class="precio-anterior">$25,00</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!--aqui pondre seccion de NUESTROS SERVICIOS-->
+      <section class="nuestros-servicios">
+        <h2>Nuestros servicios</h2>
+
+        <div class="contenedor-nuestros">
+          <div class="tarjetas">
+            <img src="./assets/image/nst1.jpeg" alt="Producto-1" />
+            <h3>Servicio basico</h3>
+            <p>
+              Describo los detalles importantes, tales como el precio, el valor,
+              la duración del servicio y por qué es exclusivo.
+            </p>
+            <p class="precio">$99,00</p>
+          </div>
+
+          <div class="tarjetas">
+            <img src="./assets/image/nst2.jpeg" alt="Producto-2" />
+            <h3>Servicio intermedio</h3>
+            <p>
+              Describo los detalles importantes, tales como el precio, el valor,
+              la duración del servicio y por qué es exclusivo.
+            </p>
+            <p class="precio">$149,00</p>
+          </div>
+
+          <div class="tarjetas">
+            <img src="./assets/image/nst3.jpeg" alt="nst3" />
+            <h3>Servicio avanzado</h3>
+            <p>
+              Describo los detalles importantes, tales como el precio, el valor,
+              la duración del servicio y por qué es exclusivo.
+            </p>
+            <p class="precio">$199,00</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre-marca">
+        <div class="contenedor-marca">
+          <div class="imagen-marca">
+            <img
+              src="./assets/image/sobrenuestra.jpeg"
+              alt="Imagen decorativa de un jarrón"
+            />
+          </div>
+          <div class="texto-marca">
+            <h2>Sobre nuestra marca</h2>
+            <p>
+              En nuestro equipo de diseño, nos dedicamos a combinar creatividad
+              e innovación para ofrecer soluciones visuales de alta calidad.
+            </p>
+            <a href="./pages/acercade.html">
+              <button class="btn-leer-mas">LEER MÁS</button></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2 class="footer-title">Designs by Fernanda</h2>
+          <p class="footer-sub">Hecho por Fernanda Galindo</p>
+        </div>
+
+        <!-- Columna derecha: varias columnas (ubicación, contacto) -->
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="col-title">Ubicación</h3>
+            <p class="col-text">Calle 126 #45-56<br />Medellín, Colombia</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="col-title">Contacto</h3>
+            <p class="col-text">correo@ejemplo.com<br />(+57) 310 392 8084</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

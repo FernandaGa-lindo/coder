@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Bootstrap Ejemplo</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="../index.html"
+            >Designs by Fernanda</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-1 mb-lg-0 me-1">
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acercade.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito</a>
+              </li>
+            </ul>
+            <a href="reservar.html"
+              ><button class="btn btn-reservar">Reservar</button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--aqui pondre seccion de nuestros servicios-->
+      <section class="nuestros img">
+        <!-- imagen principal -->
+        <img
+          class="imgnuestros"
+          src="../assets/image/servicios inicio.jpeg"
+          alt="cabecera--"
+        />
+      </section>
+
+      <!--aqui pondre seccion de NUESTROS SERVICIOS-->
+      <section class="nuestros-servicios">
+        <h2>Nuestros servicios</h2>
+
+        <div class="conten-nuestros">
+          <div class="tarjetass">
+            <img src="../assets/image/servicio.basico.jpeg" alt="Producto-1" />
+            <h3>Servicio basico</h3>
+            <p class="precios">$99,00</p>
+          </div>
+
+          <div class="tarjetass">
+            <img src="../assets/image/serv.intermedio.jpeg" alt="Producto-2" />
+            <h3>Servicio intermedio</h3>
+            <p class="precios">$149,00</p>
+          </div>
+        </div>
+
+        <div class="conten-nuestros">
+          <div class="tarjetass">
+            <img src="../assets/image/servi.avanzado.jpeg" alt="Producto-3" />
+            <h3>Servicio avanzado</h3>
+            <p class="precios">$199,00</p>
+          </div>
+
+          <div class="tarjetass">
+            <img src="../assets/image/servio,avan+.jpeg" alt="Producto-4" />
+            <h3>Servicio avanzado +</h3>
+            <p class="precios">$249,00</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de contacto -->
+      <section class="contacto">
+        <div class="texto-contacto">
+          <h2>Contáctanos</h2>
+          <p>
+            ¿Quieres que trabajemos juntos? Ingresa tus datos y nos pondremos en
+            contacto contigo en breve. Esperamos tener noticias tuyas pronto.
+          </p>
+        </div>
+
+        <form class="formulario-contacto">
+          <div class="fila">
+            <div class="campo">
+              <label for="nombre">Nombre (obligatorio)</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="campo">
+              <label for="apellido">Apellido (obligatorio)</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico (obligatorio)</label>
+            <input type="email" id="correo" name="correo" required />
+          </div>
+
+          <div class="campo checkbox">
+            <input type="checkbox" id="registro" name="registro" />
+            <label for="registro"
+              >Regístrate para recibir noticias y actualizaciones</label
+            >
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje (obligatorio)</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2 class="footer-title">Designs by Fernanda</h2>
+          <p class="footer-sub">Hecho por Fernanda Galindo</p>
+        </div>
+
+        <!-- Columna derecha: varias columnas (ubicación, contacto) -->
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="col-title">Ubicación</h3>
+            <p class="col-text">Calle 126 #45-56<br />Medellín, Colombia</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="col-title">Contacto</h3>
+            <p class="col-text">correo@ejemplo.com<br />(+57) 310 392 8084</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
