@@ -450,6 +450,7 @@ width: 100%;
 
 
 
+
 /* --- EDICION DE SERVICIOS.HTML --- */
 /* --- EDICION IMAGEN CABECERA --- */
 
@@ -1098,6 +1099,31 @@ width: 100%;
   .footer-columns {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+/* Responsive para móvil (360px a 480px) */
+@media (max-width: 650px) {
+  .contenedor {
+    flex-direction: column; /* Hace que la imagen y el texto se apilen */
+    align-items: center; /* Centra los elementos */
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .contenedor .texto {
+    max-width: 100%; /* Ocupa todo el ancho */
+    font-size: 18px; /* Ajusta tamaño del texto */
+  }
+
+  .contenedor .imagen img {
+    max-width: 100%; /* Imagen ocupa todo el ancho */
+    height: auto;
+  }
+
+  .quienes {
+    font-size: 2rem; /* Título más proporcional */
   }
 }
 
