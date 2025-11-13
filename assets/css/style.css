@@ -1103,7 +1103,7 @@ width: 100%;
 }
 
 /* Responsive para móvil (360px a 480px) */
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .contenedor {
     flex-direction: column; /* Hace que la imagen y el texto se apilen */
     align-items: center; /* Centra los elementos */
