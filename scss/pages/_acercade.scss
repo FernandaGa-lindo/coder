@@ -1,0 +1,23 @@
+/* EDICION ACERCA DE ACERCA DE (QUIENES SOMOS) */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* los alinea arriba */
+    gap: 40px;
+    padding: 40px 0px;
+}
+
+
+/* Texto a la izquierda */
+.texto {
+  font-size: 20px;
+    flex: 1;                  /* Ocupa la mitad del ancho */
+    max-width: 50%;
+}
+
+
+/* Imagen a la derecha */
+.imagen img {
+width: 100%;
+    max-width: 450px;        
+}

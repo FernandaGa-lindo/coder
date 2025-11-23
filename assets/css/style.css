@@ -1,6 +1,6 @@
-
+@charset "UTF-8";
 /* --- ACA VAN MIS TIPOGRAFIAS --- */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 body {
   font-family: "Instrument Sans", sans-serif;
   margin: 0 60px 0 60px;
@@ -25,17 +25,15 @@ header .container {
   padding: 20px 0px;
 }
 
-
 header .hamburguesa {
   font-size: 28px;
-
 }
 
 /* --- CONTENEDOR PRINCIPAL --- */
 .container {
   max-width: 1400px;
   margin: auto;
-  padding: 20px 0px; 
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +71,108 @@ header .hamburguesa {
   font-weight: 500;
 }
 
-/* --- BOTÓN RESERVAR --- */
+/* --- EDICION MENU HAMBURGUESA BOOTSTRAP --- */
+.navbar {
+  box-shadow: none !important; /* elimina la sombra */
+  border: none !important; /* elimina el borde inferior */
+  background-color: #fff !important; /* fondo blanco */
+}
+
+/* Quita el padding interno del navbar y su contenedor */
+.navbar,
+.navbar .container-fluid {
+  padding: 10px 0px 10px 0px !important;
+  margin: 0 !important;
+}
+
+/* Reduce el espacio entre los enlaces del menú */
+.navbar-nav .nav-item {
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+.me-1 {
+  margin-right: 0.3rem !important;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* --- Enlaces de navegación --- */
+.navbar .nav-link {
+  color: #000000 !important;
+  font-weight: 500;
+  margin-right: 0px;
+  padding: none;
+}
+
+.navbar .nav-link:hover {
+  color: #666666 !important;
+}
+
+/* AQUI VA EDICION DEL FOOTER */
+.site-footer {
+  width: 100%;
+  background: #ffffff;
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-brand {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #111;
+  font-weight: 600;
+}
+
+.footer-sub {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 150px;
+  align-items: flex-start;
+}
+
+.footer-col {
+  min-width: 160px;
+  max-width: 260px;
+}
+
+.col-title {
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  color: #111;
+  font-weight: 600;
+}
+
+.col-text {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* --- BOTÓN RESERVAR DEL NAV--- */
 .btn-reservar {
   background-color: #000000;
   color: #ffffff;
@@ -86,45 +185,16 @@ header .hamburguesa {
 }
 
 .btn-reservar:hover {
-  background-color: #272727cf;
+  background-color: rgba(39, 39, 39, 0.8117647059);
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 991px) {
-  header .hamburguesa {
-  display: block;
-  }
-  
-  .container {
-    padding: 15px 20px;
-  }
-  .navbar ul {
-    gap: 15px;
-  }
-
-}
-
-
-
-/* --- EDICION INDEX ---*/
-/* --- EDICION IMAGEN CABECERA --- */
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-/* --- EDICION PRODUCTOS DESTACADOS --- */
-
+/* -- BOTON DE INDEX  -- */
 /* --- BOTÓN VER TODO --- */
 .productos-destacados h1 {
   margin: 100px 0 0 0;
   font-size: 3em;
   margin-bottom: 20px;
 }
-
 
 .titulo-boton {
   display: flex;
@@ -154,129 +224,7 @@ header .hamburguesa {
   color: white;
 }
 
-
-/* Contenedor que organiza las tarjetas */
-.contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* Cada tarjeta de producto */
-.tarjeta {
-  width: 100%; /* el grid ya define el ancho */
-}
-
-.tarjeta:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
-}
-
-.tarjeta img {
-  width: 100%;
-
-}
-
-.tarjeta h3 {
-  font-size: 1.3em;
-  margin: 10px 0 5px;
-}
-
-.tarjeta p {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-}
-
-/* Precio anterior tachado */
-.precio-anterior {
-  text-decoration: line-through;
-  color: gray;
-  font-size: 0.9em;
-  margin-left: 5px;
-}
-
-/* --- AQUI VA NUESTROS SERVICIOS DE INDEX --- */
-
-/* Contenedor que organiza las tarjetas */
-.nuestros-servicios h2 {
-  margin: 150px 0 30px 0;
-  padding:  0 0 20px 0;
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.contenedor-nuestros {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 0 0 180px 0;
-}
-
-/* Cada tarjeta de producto */
-.tarjetas {
-  width: 100%;                  
-}
-
-.tarjetas:hover {
-  transform: translateY(-5px); 
-}
-
-.tarjetas img {
-  width: 100%;
-
-}
-
-.tarjetas h3 {
-  font-size: 1.4em;
-  margin: 10px 0 5px;
-}
-
-.tarjetas p {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-}
-.tarjetas .precio {
-  font-weight: bold;      /* Precio destacado */
-  margin-bottom: 10px;
-}
-
-/* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
-.sobre-marca {
-  width: 100%;
-  background-color: #fff;
-  margin: 0 0 120px 0;
-}
-
-.contenedor-marca {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-
-.imagen-marca img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  object-fit: cover; 
-}
-
-
-.texto-marca {
-  max-width: 550px;
-}
-
-.texto-marca h2 {
-  font-size: 2.5rem;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.texto-marca p {
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
+/* -- BOTON LEER MAS DE INDEX SOBRE NUESTRA MARCA -- */
 .btn-leer-mas {
   background-color: #000;
   color: #fff;
@@ -292,295 +240,7 @@ header .hamburguesa {
   background-color: #333;
 }
 
-@media (max-width: 768px) {
-  .contenedor-marca {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .imagen-marca img {
-    max-width: 100%;
-  }
-
-  .texto-marca {
-    max-width: 100%;
-  }
-}
-
-
-
-/* AQUI VA EDICION DEL FOOTER */
-
-.site-footer {
-  width: 100%;               
-  background: #ffffff;       
-  padding: 60px 0;          
-  border-top: 1px solid #eee; 
-}
-
-
-.footer-container {
-  max-width: 1440px;          
-  margin: 0 auto;             
-  display: flex;              
-  justify-content: space-between; 
-  align-items: flex-start;    
-  gap: 30px;                  
-}
-
-
-.footer-brand {
-  flex: 0 0 auto;            
-  text-align: left;           
-}
-
-
-.footer-title {
-  font-size: 2rem;          
-  margin: 0 0 10px 0;        
-  color: #111;                
-  font-weight: 600;          
-}
-
-
-.footer-sub {
-  margin: 0;
-  color: #666;
-  font-size: 0.95rem;
-}
-
-
-.footer-columns {
-  display: flex;              
-  gap: 150px;                  
-  align-items: flex-start;
-}
-
-
-.footer-col {
-  min-width: 160px;          
-  max-width: 260px;           
-}
-
-
-.col-title {
-  font-size: 1rem;
-  margin: 0 0 8px 0;
-  color: #111;
-  font-weight: 600;
-}
-
-
-.col-text {
-  margin: 0;
-  color: #444;
-  line-height: 1.6;         
-  font-size: 0.95rem;
-}
-
-/* ======== Responsive: en pantallas pequeñas apilamos todo ======== */
-@media (max-width: 800px) {
-  .footer-container {
-    flex-direction: column;  
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .footer-columns {
-    flex-direction: column;   
-    gap: 12px;
-  }
-
-  .footer-title {
-    font-size: 1.6rem;       
-  }
-}*
-
-
-
-/* EDICION ACERCA DE ACERCA DE (QUIENES SOMOS) */
-.contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* los alinea arriba */
-    gap: 40px;
-    padding: 40px 0px;
-}
-
-
-/* Texto a la izquierda */
-.texto {
-  font-size: 20px;
-    flex: 1;                  /* Ocupa la mitad del ancho */
-    max-width: 50%;
-}
-
-
-/* Imagen a la derecha */
-.imagen img {
-width: 100%;
-    max-width: 450px;        
-}
-
-
-
-
-/* --- EDICION DE SERVICIOS.HTML --- */
-/* --- EDICION IMAGEN CABECERA --- */
-
-.nuestros img {
-  margin: 50px 0 0 0;
-    width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-/* --- AQUI VA NUESTROS SERVICIOS de servicios ---*/
-
-/* Contenedor que organiza las tarjetas */
-.nuestros-servicios h2 {
-  margin: 150px 0 30px 0;
-  padding:  0 0 20px 0;
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.conten-nuestros {
-  padding: 0 0 60px 0;
-  display: flex;               
-  flex-wrap: wrap;           
-  gap: 49px;                  
-}
-
-
-.tarjetass {
-  background-color: #fff;
-  width: 48%;                 
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.tarjetass:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
-}
-
-.tarjetass img {
-  width: 100%;
-
-}
-
-.tarjetass h3 {
-  font-size: 28px;
-  margin: 10px 0 5px;
-}
-
-
-.tarjetass .precios {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-
-
-/* --- AQUI PONDRE TIENDA ---*/
-/* Contenedor que organiza las tarjetas */
-
-.conten-productos1 {
-  padding: 30px 0 60px 0;
-  display: flex;              
-  flex-wrap: wrap;             
-  gap: 49px;                  
-}
-
-.conten-productos {
-  padding: 0 0 60px 0;
-  display: flex;              
-  flex-wrap: wrap;             
-  gap: 49px;                  
-}
-
-/* Cada tarjeta de producto */
-.tarjetass {
-  background-color: #fff;
-  width: 48%;                 
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.tarjetass:hover {
-  transform: translateY(-5px); 
-}
-
-.tarjetass img {
-  width: 100%;
-
-}
-
-.tarjetass h3 {
-  font-size: 28px;
-  margin: 10px 0 5px;
-}
-
-
-.tarjetass .precios {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-
-
-/* --- AQUI PONDRE SECCION DE CONTACTO --- */
-
-.contact-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  gap: 90px;
-  padding: 40px 0 100px 0;
-}
-
-.contact-content h1 {
-  font-size: 48px;
-  margin-top: 20px;
-}
-
-.contact-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.contact-form {
-  margin-top: 40px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 14px;
-}
-
-.name-fields {
-  display: flex;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid black;
-  border-radius: 6px;
-  padding: 14px 18px;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.contact-form textarea {
-  height: 140px;
-  resize: none;
-}
-
+/* -- BOTON DE FORMULARIO DE PAGINA CONTACTOS -- */
 .contact-form button {
   background: black;
   color: white;
@@ -591,29 +251,46 @@ width: 100%;
   font-size: 15px;
 }
 
-.contact-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 0px;
+/* -- BOTON DE FORMULARIO DE CONTACTANOS -- */
+.btn-enviar {
+  align-self: flex-start;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-
-
-/* 📱 Responsivo para celular */
-@media (max-width: 800px) {
-  .contact-section {
-    grid-template-columns: 1fr;
-  }
-  .contact-image {
-    order: -1;
-  }
+.btn-enviar:hover {
+  background-color: #333;
 }
 
+/* -- BOTON DE CARRITO (SEGUIR COMPRANDO) -- */
+.btn-outline {
+  border: 1px solid black;
+  padding: 12px 24px;
+  background: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
+/* --- Botón de Reservar MENÚ HAMBURGUESA --- */
+.btn-reservar {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #333333 !important;
+}
 
 /* AQUI PONDRE FORMULARIO DE CONTACTANOS */
-
 .contacto {
   background-color: #e6e6e6;
   display: flex;
@@ -682,48 +359,311 @@ width: 100%;
   gap: 10px;
 }
 
-.btn-enviar {
-  align-self: flex-start;
-  background-color: black;
-  color: white;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1rem;
+/* --- EDICION INDEX ---*/
+/* --- EDICION IMAGEN CABECERA --- */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.btn-enviar:hover {
-  background-color: #333;
+/* --- EDICION PRODUCTOS DESTACADOS --- */
+/* Contenedor que organiza las tarjetas */
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .contacto {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .texto-contacto,
-  .formulario-contacto {
-    max-width: 100%;
-  }
-
-  .fila {
-    flex-direction: column;
-  }
-
-  .btn-enviar {
-    align-self: center;
-  }
+/* Cada tarjeta de producto */
+.tarjeta {
+  width: 100%; /* el grid ya define el ancho */
 }
 
+.tarjeta:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+.tarjeta img {
+  width: 100%;
+}
+
+.tarjeta h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+}
+
+.tarjeta p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+/* Precio anterior tachado */
+.precio-anterior {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+/* --- AQUI VA NUESTROS SERVICIOS DE INDEX --- */
+/* Contenedor que organiza las tarjetas */
+.nuestros-servicios h2 {
+  margin: 150px 0 30px 0;
+  padding: 0 0 20px 0;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.contenedor-nuestros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 0 0 180px 0;
+}
+
+/* Cada tarjeta de producto */
+.tarjetas {
+  width: 100%;
+}
+
+.tarjetas:hover {
+  transform: translateY(-5px);
+}
+
+.tarjetas img {
+  width: 100%;
+}
+
+.tarjetas h3 {
+  font-size: 1.4em;
+  margin: 10px 0 5px;
+}
+
+.tarjetas p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.tarjetas .precio {
+  font-weight: bold; /* Precio destacado */
+  margin-bottom: 10px;
+}
+
+/* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
+.sobre-marca {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 0 120px 0;
+}
+
+.contenedor-marca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.imagen-marca img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.texto-marca {
+  max-width: 550px;
+}
+
+.texto-marca h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.texto-marca p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* --- EDICION DE SERVICIOS.HTML --- */
+/* --- EDICION IMAGEN CABECERA --- */
+.nuestros img {
+  margin: 50px 0 0 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- AQUI VA NUESTROS SERVICIOS de servicios ---*/
+/* Contenedor que organiza las tarjetas */
+.nuestros-servicios h2 {
+  margin: 150px 0 30px 0;
+  padding: 0 0 20px 0;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.conten-nuestros {
+  padding: 0 0 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 49px;
+}
+
+.tarjetass {
+  background-color: #fff;
+  width: 48%;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tarjetass:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+.tarjetass img {
+  width: 100%;
+}
+
+.tarjetass h3 {
+  font-size: 28px;
+  margin: 10px 0 5px;
+}
+
+.tarjetass .precios {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* --- AQUI PONDRE TIENDA ---*/
+/* Contenedor que organiza las tarjetas */
+.conten-productos1 {
+  padding: 30px 0 60px 0;
+  display: flex;              
+  flex-wrap: wrap;             
+  gap: 49px;                  
+}
+
+.conten-productos {
+  padding: 0 0 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 49px;
+}
+
+/* Cada tarjeta de producto */
+.tarjetass {
+  background-color: #fff;
+  width: 48%;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tarjetass:hover {
+  transform: translateY(-5px);
+}
+
+.tarjetass img {
+  width: 100%;
+}
+
+.tarjetass h3 {
+  font-size: 28px;
+  margin: 10px 0 5px;
+}
+
+.tarjetass .precios {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* EDICION ACERCA DE ACERCA DE (QUIENES SOMOS) */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* los alinea arriba */
+  gap: 40px;
+  padding: 40px 0px;
+}
+
+/* Texto a la izquierda */
+.texto {
+  font-size: 20px;
+  flex: 1; /* Ocupa la mitad del ancho */
+  max-width: 50%;
+}
+
+/* Imagen a la derecha */
+.imagen img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* --- AQUI PONDRE SECCION DE CONTACTO --- */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 90px;
+  padding: 40px 0 100px 0;
+}
+
+.contact-content h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.contact-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0px;
+}
 
 /* AQUI PONDRE DE CARRITO DE LOS PRODCUTOS */
-
 /* CONTENIDO CARRITO */
 .cart-container {
-  padding: 40px 0 80px 0
+  padding: 40px 0 80px 0;
 }
 
 .cart-empty {
@@ -731,16 +671,7 @@ width: 100%;
   margin: 40px 0 250px 0;
 }
 
-.btn-outline {
-  border: 1px solid black;
-  padding: 12px 24px;
-  background: transparent;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 /* --- AQUI PONDRE LO DE RESERVAS --- */
-
 .citas-container {
   max-width: 1440px;
   margin: 60px auto;
@@ -790,11 +721,10 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
   margin-bottom: 18px;
   border: 1px solid #eee;
 }
-
 
 .opcion-cita strong {
   font-size: 16px;
@@ -827,74 +757,119 @@ width: 100%;
   text-align: left;
 }
 
-/* RESPONSIVE */
-@media(max-width: 991px) {
+/* --- RESPONSIVE --- */
+@media (max-width: 991px) {
+  header .hamburguesa {
+    display: block;
+  }
+  .container {
+    padding: 15px 20px;
+  }
+  .navbar ul {
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-marca {
+    flex-direction: column;
+    text-align: center;
+  }
+  .imagen-marca img {
+    max-width: 100%;
+  }
+  .texto-marca {
+    max-width: 100%;
+  }
+}
+/* ======== Responsive: DE FOOTER en pantallas pequeñas apilamos todo ======== */
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-title {
+    font-size: 1.6rem;
+  }
+}
+/* 📱 Responsivo para celular de pagina contacto */
+@media (max-width: 800px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+  .contact-image {
+    order: -1;
+  }
+}
+/* Responsivo DE FORMULARIO DE CONTACTANOS */
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto-contacto,
+  .formulario-contacto {
+    max-width: 100%;
+  }
+  .fila {
+    flex-direction: column;
+  }
+  .btn-enviar {
+    align-self: center;
+  }
+}
+/* RESPONSIVE DE RESERVAR */
+@media (max-width: 991px) {
   .citas-container {
     flex-direction: column;
     padding: 0 25px;
   }
-
   .agenda {
     border-left: none;
     padding-left: 0;
   }
 }
-
-
-
 /* Responsive tablet */
 @media (max-width: 1024px) {
-
   body {
     margin: 0 30px;
   }
-
   .navbar ul {
     gap: 15px;
   }
-
   .contenedor-productos,
   .contenedor-nuestros,
   .conten-productos1,
   .conten-productos {
     gap: 25px;
   }
-
   .tarjeta,
   .tarjetas,
   .tarjetass {
     width: 100%;
   }
-
   .footer-columns {
     gap: 60px;
   }
-  
 }
-
 /* responsive mobile*/
-
 @media (max-width: 768px) {
-
   body {
     margin: 0 15px;
   }
-
   header .container {
     align-items: flex-start;
   }
-
-
-  
   .navbar-collapse.show {
-  display: block !important;
-}
-
-
+    display: block !important;
+  }
   .btn-reservar {
     display: none;
   }
-
   .contenedor-productos,
   .contenedor-nuestros,
   .conten-productos1,
@@ -902,63 +877,42 @@ width: 100%;
     flex-direction: column;
     align-items: center;
   }
-
   .tarjeta,
   .tarjetas,
   .tarjetass {
     width: 100%;
   }
-
-
   .contact-section {
     grid-template-columns: 1fr;
   }
-
   .footer-container {
     flex-direction: column;
     gap: 30px;
   }
-
   .footer-columns {
     flex-direction: column;
     gap: 20px;
   }
-
-  
 }
-
-
 /* --- RESPONSIVE DESIGN COMPLETO --- */
-
-
-
 /*  DESKTOP GRANDE (desde 1180px en adelante) */
-
 @media (min-width: 1180px) {
   body {
     margin: 0 60px;
   }
-
   header .container {
     padding: 25px 0;
   }
-
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-
-
-
 /* --- TABLET (desde 768px a 992px) --- */
-
 @media (min-width: 768px) and (max-width: 992px) {
   body {
     margin: 0 40px;
   }
-
-
   .btn-reservar {
     background-color: black !important;
     color: white !important;
@@ -966,20 +920,15 @@ width: 100%;
     padding: 8px 20px;
     margin-left: 10px;
   }
-
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .navbar ul {
     display: flex;
     gap: 20px;
   }
-
-
-
   /* Contenido principal */
   .contenedor-productos,
   .contenedor-nuestros,
@@ -989,65 +938,52 @@ width: 100%;
     justify-content: center;
     gap: 25px;
   }
-
   .tarjeta,
   .tarjetas,
   .tarjetass {
     width: 100%;
   }
-
   .contact-section {
     grid-template-columns: 1fr;
   }
-
   .contact-image {
     order: -1;
   }
-
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-
-
-
 /* --- MÓVIL (desde 360px a 480px) --- */
-
 @media (min-width: 360px) and (max-width: 480px) {
   body {
     margin: 0 20px;
   }
-
-
   header .container {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-
   .navbar ul {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-/* Centrar botón Reservar dentro del menú hamburguesa */
-@media (max-width: 768px) {
-
+  /* Centrar botón Reservar dentro del menú hamburguesa */
+  /* SECCIONES EN UNA SOLA COLUMNA */
+}
+@media (min-width: 360px) and (max-width: 480px) and (max-width: 768px) {
   /* Asegurar que el botón quede centrado */
   #navbarSupportedContent .btn-reservar {
     display: block !important;
     margin: 20px auto 10px auto !important;
     text-align: center !important;
   }
-
   .navbar-nav .nav-item {
     margin-right: 0 !important;
   }
 }
-
-
-  /* SECCIONES EN UNA SOLA COLUMNA */
+@media (min-width: 360px) and (max-width: 480px) {
   .contenedor-productos,
   .contenedor-nuestros,
   .conten-nuestros,
@@ -1057,41 +993,34 @@ width: 100%;
     flex-direction: column;
     align-items: center;
   }
-
   .tarjeta,
   .tarjetas,
   .tarjetass {
     width: 100%;
     max-width: 360px;
   }
-
   .nuestros-servicios h2,
   .productos-destacados h1,
   .contact-content h1 {
     text-align: center;
     font-size: 2rem;
   }
-
   .contact-section {
     grid-template-columns: 1fr;
   }
-
   .contact-image {
     order: -1;
   }
-
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
   .footer-columns {
     flex-direction: column;
     gap: 10px;
   }
 }
-
 /* Responsive para móvil (360px a 480px) */
 @media (max-width: 480px) {
   .contenedor {
@@ -1101,110 +1030,37 @@ width: 100%;
     padding: 20px;
     gap: 30px;
   }
-
   .contenedor .texto {
     max-width: 100%; /* Ocupa todo el ancho */
     font-size: 18px; /* Ajusta tamaño del texto */
   }
-
   .contenedor .imagen img {
     max-width: 100%; /* Imagen ocupa todo el ancho */
     height: auto;
   }
-
   .quienes {
     font-size: 2rem; /* Título más proporcional */
   }
 }
-
 @media (max-width: 992px) {
   .btn-reservar {
-    display: block !important;  /* Asegura que se vea */
+    display: block !important; /* Asegura que se vea */
     margin-top: 0;
-    margin-left: 0px ;
+    margin-left: 0px;
   }
-
   .me-1 {
     margin-right: 0px;
   }
-  
-
 }
-
-
-
-/* --- EDICION MENU HAMBURGUESA BOOTSTRAP --- */
-.navbar {
-  box-shadow: none !important;   /* elimina la sombra */
-  border: none !important;       /* elimina el borde inferior */
-  background-color: #fff !important; /* fondo blanco */
-}
-
-/* Quita el padding interno del navbar y su contenedor */
-.navbar,
-.navbar .container-fluid {
-  padding: 10px 0px 10px 0px !important;
-  margin: 0 !important;
-}
-
-/* Reduce el espacio entre los enlaces del menú */
-.navbar-nav .nav-item {
-  margin-right: 20px; 
-  margin-top: 0;
-}
-
-.me-1 {
-  margin-right: .3rem !important;
-}
-
-.navbar-nav .nav-link {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-
-/* --- Enlaces de navegación --- */
-.navbar .nav-link {
-  color: #000000 !important;
-  font-weight: 500;
-  margin-right: 0px;
-  padding: none;
-}
-
-
-.navbar .nav-link:hover {
-  color: #666666 !important;
-}
-
-/* --- Botón de Reservar --- */
-.btn-reservar {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border: none;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.btn-reservar:hover {
-  background-color: #333333 !important;
-}
-
-
 /* ----- MÓVIL ----- */
 @media (max-width: 360px) {
-
   .navbar ul.active {
     display: flex; /* aparece al presionar hamburguesa */
   }
-
   .hamburguesa {
     display: block;
     font-size: 24px;
     cursor: pointer;
   }
 }
-
-
-
 /*# sourceMappingURL=style.css.map */

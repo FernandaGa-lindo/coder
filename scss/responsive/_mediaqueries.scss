@@ -1,0 +1,407 @@
+/* --- RESPONSIVE --- */
+@media (max-width: 991px) {
+  header .hamburguesa {
+  display: block;
+  }
+  
+  .container {
+    padding: 15px 20px;
+  }
+  .navbar ul {
+    gap: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .contenedor-marca {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen-marca img {
+    max-width: 100%;
+  }
+
+  .texto-marca {
+    max-width: 100%;
+  }
+}
+
+
+/* ======== Responsive: DE FOOTER en pantallas pequeñas apilamos todo ======== */
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;  
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;   
+    gap: 12px;
+  }
+
+  .footer-title {
+    font-size: 1.6rem;       
+  }
+}
+
+
+
+/* 📱 Responsivo para celular de pagina contacto */
+@media (max-width: 800px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+  .contact-image {
+    order: -1;
+  }
+}
+
+
+/* Responsivo DE FORMULARIO DE CONTACTANOS */
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-contacto,
+  .formulario-contacto {
+    max-width: 100%;
+  }
+
+  .fila {
+    flex-direction: column;
+  }
+
+  .btn-enviar {
+    align-self: center;
+  }
+}
+
+
+/* RESPONSIVE DE RESERVAR */
+@media(max-width: 991px) {
+  .citas-container {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
+  .agenda {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+
+
+/* Responsive tablet */
+@media (max-width: 1024px) {
+
+  body {
+    margin: 0 30px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+
+  .contenedor-productos,
+  .contenedor-nuestros,
+  .conten-productos1,
+  .conten-productos {
+    gap: 25px;
+  }
+
+  .tarjeta,
+  .tarjetas,
+  .tarjetass {
+    width: 100%;
+  }
+
+  .footer-columns {
+    gap: 60px;
+  }
+  
+}
+
+/* responsive mobile*/
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 0 15px;
+  }
+
+  header .container {
+    align-items: flex-start;
+  }
+
+
+  
+  .navbar-collapse.show {
+  display: block !important;
+}
+
+
+  .btn-reservar {
+    display: none;
+  }
+
+  .contenedor-productos,
+  .contenedor-nuestros,
+  .conten-productos1,
+  .conten-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta,
+  .tarjetas,
+  .tarjetass {
+    width: 100%;
+  }
+
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  
+}
+
+
+/* --- RESPONSIVE DESIGN COMPLETO --- */
+
+
+
+/*  DESKTOP GRANDE (desde 1180px en adelante) */
+
+@media (min-width: 1180px) {
+  body {
+    margin: 0 60px;
+  }
+
+  header .container {
+    padding: 25px 0;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+/* --- TABLET (desde 768px a 992px) --- */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    margin: 0 40px;
+  }
+
+
+  .btn-reservar {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 25px;
+    padding: 8px 20px;
+    margin-left: 10px;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+
+
+  /* Contenido principal */
+  .contenedor-productos,
+  .contenedor-nuestros,
+  .conten-nuestros,
+  .conten-productos,
+  .conten-productos1 {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .tarjeta,
+  .tarjetas,
+  .tarjetass {
+    width: 100%;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-image {
+    order: -1;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+/* --- MÓVIL (desde 360px a 480px) --- */
+
+@media (min-width: 360px) and (max-width: 480px) {
+  body {
+    margin: 0 20px;
+  }
+
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+/* Centrar botón Reservar dentro del menú hamburguesa */
+@media (max-width: 768px) {
+
+  /* Asegurar que el botón quede centrado */
+  #navbarSupportedContent .btn-reservar {
+    display: block !important;
+    margin: 20px auto 10px auto !important;
+    text-align: center !important;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0 !important;
+  }
+}
+
+
+  /* SECCIONES EN UNA SOLA COLUMNA */
+  .contenedor-productos,
+  .contenedor-nuestros,
+  .conten-nuestros,
+  .conten-productos,
+  .conten-productos1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta,
+  .tarjetas,
+  .tarjetass {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .nuestros-servicios h2,
+  .productos-destacados h1,
+  .contact-content h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-image {
+    order: -1;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Responsive para móvil (360px a 480px) */
+@media (max-width: 480px) {
+  .contenedor {
+    flex-direction: column; /* Hace que la imagen y el texto se apilen */
+    align-items: center; /* Centra los elementos */
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .contenedor .texto {
+    max-width: 100%; /* Ocupa todo el ancho */
+    font-size: 18px; /* Ajusta tamaño del texto */
+  }
+
+  .contenedor .imagen img {
+    max-width: 100%; /* Imagen ocupa todo el ancho */
+    height: auto;
+  }
+
+  .quienes {
+    font-size: 2rem; /* Título más proporcional */
+  }
+}
+
+@media (max-width: 992px) {
+  .btn-reservar {
+    display: block !important;  /* Asegura que se vea */
+    margin-top: 0;
+    margin-left: 0px ;
+  }
+
+  .me-1 {
+    margin-right: 0px;
+  }
+  
+
+}
+
+
+
+/* ----- MÓVIL ----- */
+@media (max-width: 360px) {
+
+  .navbar ul.active {
+    display: flex; /* aparece al presionar hamburguesa */
+  }
+
+  .hamburguesa {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

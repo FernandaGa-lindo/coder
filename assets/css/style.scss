@@ -1,0 +1,24 @@
+// Base
+@import 'base/global';
+@import 'base/mixins';
+
+// Layout
+@import 'layout/header';
+@import 'layout/navar';
+@import 'layout/footer';
+
+// Components
+@import 'componentes/buttons';
+@import 'componentes/forms';
+
+// Pages
+@import 'pages/index';
+@import 'pages/servicios';
+@import 'pages/tienda';
+@import 'pages/acercade';
+@import 'pages/contacto';
+@import 'pages/carrito';
+@import 'pages/reservar';
+
+// Responsive
+@import 'responsive/mediaqueries';

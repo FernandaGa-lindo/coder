@@ -1,0 +1,58 @@
+/* --- AQUI PONDRE SECCION DE CONTACTO --- */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 90px;
+  padding: 40px 0 100px 0;
+}
+
+.contact-content h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.contact-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}

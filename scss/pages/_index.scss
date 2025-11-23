@@ -1,0 +1,136 @@
+/* --- EDICION INDEX ---*/
+/* --- EDICION IMAGEN CABECERA --- */
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* --- EDICION PRODUCTOS DESTACADOS --- */
+
+/* Contenedor que organiza las tarjetas */
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Cada tarjeta de producto */
+.tarjeta {
+  width: 100%; /* el grid ya define el ancho */
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+.tarjeta img {
+  width: 100%;
+
+}
+
+.tarjeta h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+}
+
+.tarjeta p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+/* Precio anterior tachado */
+.precio-anterior {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+/* --- AQUI VA NUESTROS SERVICIOS DE INDEX --- */
+
+/* Contenedor que organiza las tarjetas */
+.nuestros-servicios h2 {
+  margin: 150px 0 30px 0;
+  padding:  0 0 20px 0;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.contenedor-nuestros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 0 0 180px 0;
+}
+
+/* Cada tarjeta de producto */
+.tarjetas {
+  width: 100%;                  
+}
+
+.tarjetas:hover {
+  transform: translateY(-5px); 
+}
+
+.tarjetas img {
+  width: 100%;
+
+}
+
+.tarjetas h3 {
+  font-size: 1.4em;
+  margin: 10px 0 5px;
+}
+
+.tarjetas p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+.tarjetas .precio {
+  font-weight: bold;      /* Precio destacado */
+  margin-bottom: 10px;
+}
+
+/* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
+.sobre-marca {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 0 120px 0;
+}
+
+.contenedor-marca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.imagen-marca img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+
+.texto-marca {
+  max-width: 550px;
+}
+
+.texto-marca h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.texto-marca p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+

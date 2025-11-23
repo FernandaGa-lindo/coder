@@ -1,0 +1,23 @@
+/* --- HEADER GENERAL --- */
+header {
+  background-color: #ffffff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: none;
+  position: sticky;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+
+header .hamburguesa {
+  font-size: 28px;
+
+}

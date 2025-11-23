@@ -1,0 +1,124 @@
+/* --- BOTÓN RESERVAR DEL NAV--- */
+.btn-reservar {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap; /* evita que se rompa la línea */
+}
+
+.btn-reservar:hover {
+  background-color: #272727cf;
+}
+
+/* -- BOTON DE INDEX  -- */
+/* --- BOTÓN VER TODO --- */
+.productos-destacados h1 {
+  margin: 100px 0 0 0;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+
+.titulo-boton {
+  display: flex;
+  justify-content: space-between; /* Título a la izquierda, botón a la derecha */
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.titulo-boton h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ver-todo {
+  padding: 10px 25px;
+  margin: 84px 0 0 0;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.ver-todo:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* -- BOTON LEER MAS DE INDEX SOBRE NUESTRA MARCA -- */
+
+.btn-leer-mas {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-leer-mas:hover {
+  background-color: #333;
+}
+
+/* -- BOTON DE FORMULARIO DE PAGINA CONTACTOS -- */
+
+.contact-form button {
+  background: black;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* -- BOTON DE FORMULARIO DE CONTACTANOS -- */
+
+.btn-enviar {
+  align-self: flex-start;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-enviar:hover {
+  background-color: #333;
+}
+
+
+/* -- BOTON DE CARRITO (SEGUIR COMPRANDO) -- */
+
+.btn-outline {
+  border: 1px solid black;
+  padding: 12px 24px;
+  background: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* --- Botón de Reservar MENÚ HAMBURGUESA --- */
+.btn-reservar {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #333333 !important;
+}
