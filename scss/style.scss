@@ -1,0 +1,24 @@
+// Base
+@use 'base/global';
+@use 'base/mixins';
+
+// Layout
+@use 'layout/header';
+@use 'layout/navar';
+@use 'layout/footer';
+
+// Components
+@use 'componentes/buttons';
+@use 'componentes/forms';
+
+// Pages
+@use 'pages/index';
+@use 'pages/servicios';
+@use 'pages/tienda';
+@use 'pages/acercade';
+@use 'pages/contacto';
+@use 'pages/carrito';
+@use 'pages/reservar';
+
+// Responsive
+@use 'responsive/mediaqueries';

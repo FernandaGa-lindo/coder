@@ -1,55 +1,41 @@
 /* --- EDICION DE SERVICIOS.HTML --- */
 /* --- EDICION IMAGEN CABECERA --- */
 
-.nuestros img {
+.nuestros {
+  img {
   margin: 50px 0 0 0;
     width: 100%;
   height: auto;
   display: block;
+  }
 }
-
 
 /* --- AQUI VA NUESTROS SERVICIOS de servicios ---*/
 
 /* Contenedor que organiza las tarjetas */
-.nuestros-servicios h2 {
-  margin: 150px 0 30px 0;
-  padding:  0 0 20px 0;
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
 .conten-nuestros {
   padding: 0 0 60px 0;
   display: flex;               
   flex-wrap: wrap;           
-  gap: 49px;                  
-}
-
-
-.tarjetass {
-  background-color: #fff;
-  width: 48%;                 
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.tarjetass:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
-}
-
-.tarjetass img {
-  width: 100%;
-
-}
-
-.tarjetass h3 {
-  font-size: 28px;
-  margin: 10px 0 5px;
-}
-
-
-.tarjetass .precios {
-  margin-bottom: 10px;
-  font-size: 20px;
+  gap: 49px; 
+  .tarjetass {
+    background-color: #fff;
+    width: 48%;                 
+    text-align: left;
+    transition: transform 0.3s ease;
+    img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 28px;
+      margin: 10px 0 5px;
+    }
+    .precios {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    &:hover {
+      transform: translateY(-5px); /* Efecto al pasar el mouse */
+    } 
+  }   
 }

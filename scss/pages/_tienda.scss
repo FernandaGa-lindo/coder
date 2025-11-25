@@ -1,45 +1,43 @@
 /* --- AQUI PONDRE TIENDA ---*/
 /* Contenedor que organiza las tarjetas */
-
 .conten-productos1 {
   padding: 30px 0 60px 0;
   display: flex;              
   flex-wrap: wrap;             
   gap: 46px;                  
-}
-
-.conten-productos {
+  }
+  .conten-productos {
   padding: 0 0 60px 0;
   display: flex;              
   flex-wrap: wrap;             
   gap: 49px;                  
-}
-
+  }
+  
 /* Cada tarjeta de producto */
 .tarjetass {
   background-color: #fff;
   width: 48%;                 
   text-align: left;
   transition: transform 0.3s ease;
-}
-
-.tarjetass:hover {
+  img {
+    width: 100%;
+  }
+  h3 {
+    font-size: 28px;
+    margin: 10px 0 5px;
+  }
+  .precios {
+    margin-bottom: 10px;
+    font-size: 20px;
+    .precio-anterior {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 0.9em;
+      margin-left: 5px;
+    }
+  }
+  &:hover {
   transform: translateY(-5px); 
-}
-
-.tarjetass img {
-  width: 100%;
-
-}
-
-.tarjetass h3 {
-  font-size: 28px;
-  margin: 10px 0 5px;
-}
-
-
-.tarjetass .precios {
-  margin-bottom: 10px;
-  font-size: 20px;
+  }
 }
 

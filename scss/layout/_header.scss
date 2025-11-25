@@ -7,17 +7,13 @@ header {
   z-index: 1000;
   box-shadow: none;
   position: sticky;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0px;
-}
-
-
-header .hamburguesa {
-  font-size: 28px;
-
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    }
+  .hamburguesa {
+      font-size: 28px;
+  }
 }

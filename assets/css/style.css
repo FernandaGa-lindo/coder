@@ -17,14 +17,12 @@ header {
   box-shadow: none;
   position: sticky;
 }
-
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
 }
-
 header .hamburguesa {
   font-size: 28px;
 }
@@ -48,15 +46,20 @@ header .hamburguesa {
   color: #000;
 }
 
-/* --- NAVBAR --- */
+/* --- NAVBAR (ANIDADO) --- */
 .navbar {
   display: flex;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #fff !important;
 }
-
-/* --- MENÚ --- */
+.navbar, .navbar .container-fluid {
+  padding: 10px 0px 10px 0px !important;
+  margin: 0 !important;
+}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -64,52 +67,28 @@ header .hamburguesa {
   margin: 0;
   padding: 0;
 }
-
-.navbar a {
+.navbar ul a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
 }
-
-/* --- EDICION MENU HAMBURGUESA BOOTSTRAP --- */
-.navbar {
-  box-shadow: none !important; /* elimina la sombra */
-  border: none !important; /* elimina el borde inferior */
-  background-color: #fff !important; /* fondo blanco */
-}
-
-/* Quita el padding interno del navbar y su contenedor */
-.navbar,
-.navbar .container-fluid {
-  padding: 10px 0px 10px 0px !important;
-  margin: 0 !important;
-}
-
-/* Reduce el espacio entre los enlaces del menú */
-.navbar-nav .nav-item {
+.navbar .navbar-nav .nav-item {
   margin-right: 20px;
   margin-top: 0;
 }
-
-.me-1 {
-  margin-right: 0.3rem !important;
-}
-
-.navbar-nav .nav-link {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-/* --- Enlaces de navegación --- */
-.navbar .nav-link {
+.navbar .navbar-nav .nav-link {
   color: #000000 !important;
   font-weight: 500;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-right: 0px;
   padding: none;
 }
-
-.navbar .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
   color: #666666 !important;
+}
+.navbar .me-1 {
+  margin-right: 0.3rem !important;
 }
 
 /* AQUI VA EDICION DEL FOOTER */
@@ -128,20 +107,17 @@ header .hamburguesa {
   align-items: flex-start;
   gap: 30px;
 }
-
-.footer-brand {
+.footer-container .footer-brand {
   flex: 0 0 auto;
   text-align: left;
 }
-
-.footer-title {
+.footer-container .footer-brand .footer-title {
   font-size: 2rem;
   margin: 0 0 10px 0;
   color: #111;
   font-weight: 600;
 }
-
-.footer-sub {
+.footer-container .footer-brand .footer-title .footer-sub {
   margin: 0;
   color: #666;
   font-size: 0.95rem;
@@ -152,20 +128,17 @@ header .hamburguesa {
   gap: 150px;
   align-items: flex-start;
 }
-
-.footer-col {
+.footer-columns .footer-col {
   min-width: 160px;
   max-width: 260px;
 }
-
-.col-title {
+.footer-columns .footer-col .col-title {
   font-size: 1rem;
   margin: 0 0 8px 0;
   color: #111;
   font-weight: 600;
 }
-
-.col-text {
+.footer-columns .footer-col .col-text {
   margin: 0;
   color: #444;
   line-height: 1.6;
@@ -183,26 +156,18 @@ header .hamburguesa {
   font-weight: 500;
   white-space: nowrap; /* evita que se rompa la línea */
 }
-
 .btn-reservar:hover {
   background-color: rgba(39, 39, 39, 0.8117647059);
 }
 
 /* -- BOTON DE INDEX  -- */
 /* --- BOTÓN VER TODO --- */
-.productos-destacados h1 {
-  margin: 100px 0 0 0;
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
 .titulo-boton {
   display: flex;
   justify-content: space-between; /* Título a la izquierda, botón a la derecha */
   align-items: center;
   margin-bottom: 30px;
 }
-
 .titulo-boton h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -218,7 +183,6 @@ header .hamburguesa {
   font-weight: 500;
   transition: 0.3s;
 }
-
 .ver-todo:hover {
   background-color: black;
   color: white;
@@ -235,7 +199,6 @@ header .hamburguesa {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .btn-leer-mas:hover {
   background-color: #333;
 }
@@ -262,7 +225,6 @@ header .hamburguesa {
   cursor: pointer;
   font-size: 1rem;
 }
-
 .btn-enviar:hover {
   background-color: #333;
 }
@@ -285,12 +247,11 @@ header .hamburguesa {
   font-weight: 500;
   transition: 0.3s;
 }
-
 .btn-reservar:hover {
   background-color: #333333 !important;
 }
 
-/* AQUI PONDRE FORMULARIO DE CONTACTANOS */
+/* --- FORMULARIO DE CONTACTANOS --- */
 .contacto {
   background-color: #e6e6e6;
   display: flex;
@@ -301,59 +262,48 @@ header .hamburguesa {
   min-height: 500px;
   flex-wrap: wrap; /* hace que sea responsive */
 }
-
-/* Texto */
-.texto-contacto {
+.contacto .texto-contacto {
   flex: 1;
   max-width: 400px;
 }
-
-.texto-contacto h2 {
+.contacto .texto-contacto h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
-
-.texto-contacto p {
+.contacto .texto-contacto p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
 }
-
-/* Formulario */
-.formulario-contacto {
+.contacto .formulario-contacto {
   flex: 1.1;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.fila {
+.contacto .formulario-contacto .fila {
   display: flex;
   gap: 20px;
 }
-
-.campo {
+.contacto .formulario-contacto .campo {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-
-.campo label {
+.contacto .formulario-contacto .campo label {
   font-size: 0.9rem;
   margin-bottom: 5px;
   color: #333;
 }
-
-.campo input,
-.campo textarea {
+.contacto .formulario-contacto .campo input,
+.contacto .formulario-contacto .campo textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
 }
-
-.checkbox {
+.contacto .formulario-contacto .checkbox {
   flex-direction: row;
   align-items: center;
   gap: 10px;
@@ -369,41 +319,41 @@ header .hamburguesa {
 
 /* --- EDICION PRODUCTOS DESTACADOS --- */
 /* Contenedor que organiza las tarjetas */
+.productos-destacados h1 {
+  margin: 100px 0 0 0;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  /* Cada tarjeta de producto */
 }
-
-/* Cada tarjeta de producto */
-.tarjeta {
+.contenedor-productos .tarjeta {
   width: 100%; /* el grid ya define el ancho */
 }
-
-.tarjeta:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
-}
-
-.tarjeta img {
+.contenedor-productos .tarjeta img {
   width: 100%;
 }
-
-.tarjeta h3 {
+.contenedor-productos .tarjeta h3 {
   font-size: 1.3em;
   margin: 10px 0 5px;
 }
-
-.tarjeta p {
+.contenedor-productos .tarjeta p {
   font-size: 1.1em;
   margin-bottom: 15px;
+  /* Precio anterior tachado */
 }
-
-/* Precio anterior tachado */
-.precio-anterior {
+.contenedor-productos .tarjeta p .precio-anterior {
   text-decoration: line-through;
   color: gray;
   font-size: 0.9em;
   margin-left: 5px;
+}
+.contenedor-productos .tarjeta:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
 }
 
 /* --- AQUI VA NUESTROS SERVICIOS DE INDEX --- */
@@ -420,34 +370,28 @@ header .hamburguesa {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin: 0 0 180px 0;
+  /* Cada tarjeta de producto */
 }
-
-/* Cada tarjeta de producto */
-.tarjetas {
+.contenedor-nuestros .tarjetas {
   width: 100%;
 }
-
-.tarjetas:hover {
-  transform: translateY(-5px);
-}
-
-.tarjetas img {
+.contenedor-nuestros .tarjetas img {
   width: 100%;
 }
-
-.tarjetas h3 {
+.contenedor-nuestros .tarjetas h3 {
   font-size: 1.4em;
   margin: 10px 0 5px;
 }
-
-.tarjetas p {
+.contenedor-nuestros .tarjetas p {
   font-size: 1.1em;
   margin-bottom: 15px;
 }
-
-.tarjetas .precio {
+.contenedor-nuestros .tarjetas .precio {
   font-weight: bold; /* Precio destacado */
   margin-bottom: 10px;
+}
+.contenedor-nuestros .tarjetas:hover {
+  transform: translateY(-5px);
 }
 
 /* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
@@ -456,33 +400,27 @@ header .hamburguesa {
   background-color: #fff;
   margin: 0 0 120px 0;
 }
-
-.contenedor-marca {
+.sobre-marca .contenedor-marca {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
 }
-
-.imagen-marca img {
+.sobre-marca .contenedor-marca .imagen-marca img {
   width: 100%;
   max-width: 500px;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
-.texto-marca {
+.sobre-marca .contenedor-marca .texto-marca {
   max-width: 550px;
 }
-
-.texto-marca h2 {
+.sobre-marca .contenedor-marca .texto-marca h2 {
   font-size: 2.5rem;
   color: #000;
   margin-bottom: 20px;
 }
-
-.texto-marca p {
+.sobre-marca .contenedor-marca .texto-marca p {
   color: #333;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -499,52 +437,40 @@ header .hamburguesa {
 
 /* --- AQUI VA NUESTROS SERVICIOS de servicios ---*/
 /* Contenedor que organiza las tarjetas */
-.nuestros-servicios h2 {
-  margin: 150px 0 30px 0;
-  padding: 0 0 20px 0;
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
 .conten-nuestros {
   padding: 0 0 60px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 49px;
 }
-
-.tarjetass {
+.conten-nuestros .tarjetass {
   background-color: #fff;
   width: 48%;
   text-align: left;
   transition: transform 0.3s ease;
 }
-
-.tarjetass:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
-}
-
-.tarjetass img {
+.conten-nuestros .tarjetass img {
   width: 100%;
 }
-
-.tarjetass h3 {
+.conten-nuestros .tarjetass h3 {
   font-size: 28px;
   margin: 10px 0 5px;
 }
-
-.tarjetass .precios {
+.conten-nuestros .tarjetass .precios {
   margin-bottom: 10px;
   font-size: 20px;
+}
+.conten-nuestros .tarjetass:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
 }
 
 /* --- AQUI PONDRE TIENDA ---*/
 /* Contenedor que organiza las tarjetas */
 .conten-productos1 {
   padding: 30px 0 60px 0;
-  display: flex;              
-  flex-wrap: wrap;             
-  gap: 49px;                  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 46px;
 }
 
 .conten-productos {
@@ -561,23 +487,25 @@ header .hamburguesa {
   text-align: left;
   transition: transform 0.3s ease;
 }
-
-.tarjetass:hover {
-  transform: translateY(-5px);
-}
-
 .tarjetass img {
   width: 100%;
 }
-
 .tarjetass h3 {
   font-size: 28px;
   margin: 10px 0 5px;
 }
-
 .tarjetass .precios {
   margin-bottom: 10px;
   font-size: 20px;
+}
+.tarjetass .precios .precio-anterior {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+.tarjetass:hover {
+  transform: translateY(-5px);
 }
 
 /* EDICION ACERCA DE ACERCA DE (QUIENES SOMOS) */
@@ -588,21 +516,18 @@ header .hamburguesa {
   gap: 40px;
   padding: 40px 0px;
 }
-
-/* Texto a la izquierda */
-.texto {
+.contenedor .texto { /* Texto a la izquierda */
   font-size: 20px;
   flex: 1; /* Ocupa la mitad del ancho */
   max-width: 50%;
 }
-
-/* Imagen a la derecha */
-.imagen img {
+.contenedor .imagen img { /* Imagen a la derecha */
   width: 100%;
   max-width: 450px;
 }
 
 /* --- AQUI PONDRE SECCION DE CONTACTO --- */
+/* --- SECCIÓN DE CONTACTO (Página Contacto) --- */
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -610,35 +535,29 @@ header .hamburguesa {
   gap: 90px;
   padding: 40px 0 100px 0;
 }
-
-.contact-content h1 {
+.contact-section .contact-content h1 {
   font-size: 48px;
   margin-top: 20px;
 }
-
-.contact-content p {
+.contact-section .contact-content p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 25px;
 }
-
-.contact-form {
+.contact-section .contact-form {
   margin-top: 40px;
 }
-
-.contact-form label {
+.contact-section .contact-form label {
   display: block;
   margin-bottom: 6px;
   font-size: 14px;
 }
-
-.name-fields {
+.contact-section .contact-form .name-fields {
   display: flex;
   gap: 15px;
 }
-
-.contact-form input,
-.contact-form textarea {
+.contact-section .contact-form input,
+.contact-section .contact-form textarea {
   width: 100%;
   border: 1px solid black;
   border-radius: 6px;
@@ -646,17 +565,14 @@ header .hamburguesa {
   margin-bottom: 20px;
   font-size: 15px;
 }
-
-.contact-form textarea {
+.contact-section .contact-form textarea {
   height: 140px;
   resize: none;
 }
-
-.contact-image img {
+.contact-section .contact-image img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0px;
 }
 
@@ -665,8 +581,7 @@ header .hamburguesa {
 .cart-container {
   padding: 40px 0 80px 0;
 }
-
-.cart-empty {
+.cart-container .cart-empty {
   margin-top: 40px;
   margin: 40px 0 250px 0;
 }
@@ -680,24 +595,20 @@ header .hamburguesa {
   justify-content: space-between;
   gap: 60px;
 }
-
 .citas-container .texto {
   flex: 1.3;
 }
-
-.citas-container h1 {
+.citas-container .texto h1 {
   font-size: 54px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-
-.citas-container p {
+.citas-container .texto p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
-
-.imagen-servicio {
+.citas-container .texto .imagen-servicio {
   width: 100%;
   border-radius: 6px;
   margin-top: 30px;
@@ -708,13 +619,11 @@ header .hamburguesa {
   border-left: 1px solid #ddd;
   padding-left: 52px;
 }
-
 .agenda h3 {
   font-size: 18px;
   margin-bottom: 20px;
 }
-
-.opcion-cita {
+.agenda .opcion-cita {
   background: #fff;
   border-radius: 12px;
   padding: 20px 24px;
@@ -725,18 +634,15 @@ header .hamburguesa {
   margin-bottom: 18px;
   border: 1px solid #eee;
 }
-
-.opcion-cita strong {
+.agenda .opcion-cita strong {
   font-size: 16px;
 }
-
-.opcion-cita p {
+.agenda .opcion-cita p {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 2px;
 }
-
-.opcion-cita button {
+.agenda .opcion-cita button {
   background: #000;
   color: #fff;
   border: none;
@@ -745,8 +651,7 @@ header .hamburguesa {
   cursor: pointer;
   transition: 0.3s;
 }
-
-.opcion-cita button:hover {
+.agenda .opcion-cita:hover {
   opacity: 0.8;
 }
 
@@ -970,7 +875,6 @@ header .hamburguesa {
     align-items: center;
   }
   /* Centrar botón Reservar dentro del menú hamburguesa */
-  /* SECCIONES EN UNA SOLA COLUMNA */
 }
 @media (min-width: 360px) and (max-width: 480px) and (max-width: 768px) {
   /* Asegurar que el botón quede centrado */
@@ -984,6 +888,7 @@ header .hamburguesa {
   }
 }
 @media (min-width: 360px) and (max-width: 480px) {
+  /* SECCIONES EN UNA SOLA COLUMNA */
   .contenedor-productos,
   .contenedor-nuestros,
   .conten-nuestros,
@@ -1063,4 +968,6 @@ header .hamburguesa {
     cursor: pointer;
   }
 }
+
+
 /*# sourceMappingURL=style.css.map */

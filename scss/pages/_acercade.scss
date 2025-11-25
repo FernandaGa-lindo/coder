@@ -5,19 +5,14 @@
     align-items: flex-start; /* los alinea arriba */
     gap: 40px;
     padding: 40px 0px;
+    .texto { /* Texto a la izquierda */
+            font-size: 20px;
+            flex: 1;                  /* Ocupa la mitad del ancho */
+            max-width: 50%;
+    }
+    .imagen img { /* Imagen a la derecha */
+            width: 100%;
+            max-width: 450px;        
+    }
 }
 
-
-/* Texto a la izquierda */
-.texto {
-  font-size: 20px;
-    flex: 1;                  /* Ocupa la mitad del ancho */
-    max-width: 50%;
-}
-
-
-/* Imagen a la derecha */
-.imagen img {
-width: 100%;
-    max-width: 450px;        
-}
