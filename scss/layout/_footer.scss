@@ -1,9 +1,11 @@
+@use'../base/variables' as variable; 
+
 /* AQUI VA EDICION DEL FOOTER */
 
 .site-footer {
   width: 100%;               
-  background: #ffffff;       
-  padding: 60px 0;          
+  background: variable.$color-blanco;       
+  padding: variable.$space-l 0;          
   border-top: 1px solid #eee; 
 }
 
@@ -13,14 +15,14 @@
   display: flex;              
   justify-content: space-between; 
   align-items: flex-start;    
-  gap: 30px; 
+  gap: variable.$space-m; 
   .footer-brand {
         flex: 0 0 auto;            
         text-align: left;
     .footer-title {
       font-size: 2rem;          
-      margin: 0 0 10px 0;        
-      color: #111;                
+      margin: 0 0 variable.$space-xs 0;        
+      color: variable.$color-negro;               
       font-weight: 600; 
       .footer-sub {
         margin: 0;
@@ -42,7 +44,7 @@
     .col-title {
       font-size: 1rem;
       margin: 0 0 8px 0;
-      color: #111;
+      color: variable.$color-negro;
       font-weight: 600;
   }
     .col-text {

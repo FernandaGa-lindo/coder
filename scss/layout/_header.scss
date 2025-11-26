@@ -1,6 +1,8 @@
+@use'../base/variables' as variable; 
+
 /* --- HEADER GENERAL --- */
 header {
-  background-color: #ffffff;
+  background-color: variable.$color-blanco;
   width: 100%;
   top: 0;
   left: 0;
@@ -11,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: variable.$space-s 0px;
     }
   .hamburguesa {
       font-size: 28px;

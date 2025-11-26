@@ -1,3 +1,6 @@
+@use'../base/variables' as variable;
+
+
 /* --- EDICION INDEX ---*/
 /* --- EDICION IMAGEN CABECERA --- */
 
@@ -23,7 +26,7 @@
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: variable.$space-s;
   /* Cada tarjeta de producto */
   .tarjeta {
     width: 100%; /* el grid ya define el ancho */
@@ -32,7 +35,7 @@
     }
     h3 {
       font-size: 1.3em;
-      margin: 10px 0 5px;
+      margin: variable.$space-xs 0 5px;
     }
     p {
       font-size: 1.1em;
@@ -40,13 +43,13 @@
       /* Precio anterior tachado */
       .precio-anterior {
         text-decoration: line-through;
-        color: gray;
+        color: variable.$color-gris-medio;
         font-size: 0.9em;
         margin-left: 5px;
       }
     }
     &:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
+  transform: variable.$hover-lift; /* Efecto al pasar el mouse */
     }
   }
 }
@@ -59,17 +62,17 @@
 /* Contenedor que organiza las tarjetas */
 .nuestros-servicios {
   h2 {
-  margin: 150px 0 30px 0;
-  padding:  0 0 20px 0;
+  margin: 150px 0 variable.$space-m 0;
+  padding:  0 0 variable.$space-s 0;
   font-size: 3em;
-  margin-bottom: 20px;
+  margin-bottom: variable.$space-s;
   }
 }
 
 .contenedor-nuestros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: variable.$space-m;
   margin: 0 0 180px 0;
   /* Cada tarjeta de producto */
   .tarjetas {
@@ -79,7 +82,7 @@
     }   
     h3 {
       font-size: 1.4em;
-      margin: 10px 0 5px;
+      margin: variable.$space-xs 0 5px;
     }
     p {
       font-size: 1.1em;
@@ -87,10 +90,10 @@
     }
     .precio {
       font-weight: bold;      /* Precio destacado */
-      margin-bottom: 10px;
+      margin-bottom: variable.$space-xs;
     }
     &:hover {
-      transform: translateY(-5px); 
+      transform: variable.$hover-lift; 
     }
   }
 }
@@ -101,13 +104,13 @@
 /* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
 .sobre-marca {
   width: 100%;
-  background-color: #fff;
+  background-color: variable.$color-blanco;
   margin: 0 0 120px 0;
   .contenedor-marca {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: variable.$space-l;
     .imagen-marca {
       img {
         width: 100%;
@@ -120,16 +123,16 @@
       max-width: 550px;
       h2 {
         font-size: 2.5rem;
-        color: #000;
-        margin-bottom: 20px;
+        color: variable.$color-negro;
+        margin-bottom: variable.$space-s
       }
       p {
-        color: #333;
+        color: variable.$color-gris-oscuro;
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: variable.$space-s;
       }
     }
-  }
+}
 }
 
 

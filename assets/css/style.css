@@ -7,6 +7,9 @@ body {
   /*background-color: #a3a3a3;*/
 }
 
+/*--- COLORES ---*/
+/*--- ESPACIADO (SPACING) ---*/
+/*--- FORMAS Y TRANSICIONES ---*/
 /* --- HEADER GENERAL --- */
 header {
   background-color: #ffffff;
@@ -31,7 +34,7 @@ header .hamburguesa {
 .container {
   max-width: 1400px;
   margin: auto;
-  padding: 20px 0px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +46,7 @@ header .hamburguesa {
   font-size: 19px;
   font-weight: bold;
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 /* --- NAVBAR (ANIDADO) --- */
@@ -54,7 +57,7 @@ header .hamburguesa {
   flex-wrap: wrap;
   box-shadow: none !important;
   border: none !important;
-  background-color: #fff !important;
+  background-color: #ffffff !important;
 }
 .navbar, .navbar .container-fluid {
   padding: 10px 0px 10px 0px !important;
@@ -69,7 +72,7 @@ header .hamburguesa {
 }
 .navbar ul a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-weight: 500;
 }
 .navbar .navbar-nav .nav-item {
@@ -114,7 +117,7 @@ header .hamburguesa {
 .footer-container .footer-brand .footer-title {
   font-size: 2rem;
   margin: 0 0 10px 0;
-  color: #111;
+  color: #000000;
   font-weight: 600;
 }
 .footer-container .footer-brand .footer-title .footer-sub {
@@ -135,7 +138,7 @@ header .hamburguesa {
 .footer-columns .footer-col .col-title {
   font-size: 1rem;
   margin: 0 0 8px 0;
-  color: #111;
+  color: #000000;
   font-weight: 600;
 }
 .footer-columns .footer-col .col-text {
@@ -176,7 +179,7 @@ header .hamburguesa {
 .ver-todo {
   padding: 10px 25px;
   margin: 84px 0 0 0;
-  border: 1px solid black;
+  border: 1px solid #000000;
   background: transparent;
   border-radius: 25px;
   cursor: pointer;
@@ -184,14 +187,14 @@ header .hamburguesa {
   transition: 0.3s;
 }
 .ver-todo:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* -- BOTON LEER MAS DE INDEX SOBRE NUESTRA MARCA -- */
 .btn-leer-mas {
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
   padding: 12px 30px;
   border-radius: 25px;
@@ -205,8 +208,8 @@ header .hamburguesa {
 
 /* -- BOTON DE FORMULARIO DE PAGINA CONTACTOS -- */
 .contact-form button {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
@@ -217,8 +220,8 @@ header .hamburguesa {
 /* -- BOTON DE FORMULARIO DE CONTACTANOS -- */
 .btn-enviar {
   align-self: flex-start;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   padding: 10px 25px;
   border: none;
   border-radius: 25px;
@@ -231,7 +234,7 @@ header .hamburguesa {
 
 /* -- BOTON DE CARRITO (SEGUIR COMPRANDO) -- */
 .btn-outline {
-  border: 1px solid black;
+  border: 1px solid #000000;
   padding: 12px 24px;
   background: transparent;
   border-radius: 50px;
@@ -348,7 +351,7 @@ header .hamburguesa {
 }
 .contenedor-productos .tarjeta p .precio-anterior {
   text-decoration: line-through;
-  color: gray;
+  color: #666666;
   font-size: 0.9em;
   margin-left: 5px;
 }
@@ -397,7 +400,7 @@ header .hamburguesa {
 /* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
 .sobre-marca {
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0 0 120px 0;
 }
 .sobre-marca .contenedor-marca {
@@ -417,7 +420,7 @@ header .hamburguesa {
 }
 .sobre-marca .contenedor-marca .texto-marca h2 {
   font-size: 2.5rem;
-  color: #000;
+  color: #000000;
   margin-bottom: 20px;
 }
 .sobre-marca .contenedor-marca .texto-marca p {
@@ -444,8 +447,7 @@ header .hamburguesa {
   gap: 49px;
 }
 .conten-nuestros .tarjetass {
-  background-color: #fff;
-  width: 48%;
+  background-color: #ffffff;
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -482,7 +484,7 @@ header .hamburguesa {
 
 /* Cada tarjeta de producto */
 .tarjetass {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 48%;
   text-align: left;
   transition: transform 0.3s ease;
@@ -500,7 +502,7 @@ header .hamburguesa {
 }
 .tarjetass .precios .precio-anterior {
   text-decoration: line-through;
-  color: gray;
+  color: #666666;
   font-size: 0.9em;
   margin-left: 5px;
 }
@@ -559,7 +561,7 @@ header .hamburguesa {
 .contact-section .contact-form input,
 .contact-section .contact-form textarea {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 6px;
   padding: 14px 18px;
   margin-bottom: 20px;
@@ -624,7 +626,7 @@ header .hamburguesa {
   margin-bottom: 20px;
 }
 .agenda .opcion-cita {
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
   padding: 20px 24px;
   display: flex;
@@ -643,8 +645,8 @@ header .hamburguesa {
   margin-top: 2px;
 }
 .agenda .opcion-cita button {
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   border: none;
   padding: 10px 22px;
   border-radius: 6px;
@@ -819,8 +821,8 @@ header .hamburguesa {
     margin: 0 40px;
   }
   .btn-reservar {
-    background-color: black !important;
-    color: white !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
     border-radius: 25px;
     padding: 8px 20px;
     margin-left: 10px;

@@ -1,3 +1,5 @@
+@use'../base/variables' as variable; 
+
 /* --- AQUI PONDRE SECCION DE CONTACTO --- */
 /* --- SECCIÓN DE CONTACTO (Página Contacto) --- */
 
@@ -6,7 +8,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 90px;
-  padding: 40px 0 100px 0;
+  padding: 40px 0 variable.$space-xl 0;
   .contact-content {
     h1 {
       font-size: 48px;
@@ -32,7 +34,7 @@
     input,
     textarea {
       width: 100%;
-      border: 1px solid black;
+      border: 1px solid variable.$color-negro;
       border-radius: 6px;
       padding: 14px 18px;
       margin-bottom: 20px;

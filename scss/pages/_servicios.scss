@@ -1,3 +1,5 @@
+@use'../base/variables' as variable; 
+
 /* --- EDICION DE SERVICIOS.HTML --- */
 /* --- EDICION IMAGEN CABECERA --- */
 
@@ -14,13 +16,12 @@
 
 /* Contenedor que organiza las tarjetas */
 .conten-nuestros {
-  padding: 0 0 60px 0;
+  padding: 0 0 variable.$space-l 0;
   display: flex;               
   flex-wrap: wrap;           
   gap: 49px; 
   .tarjetass {
-    background-color: #fff;
-    width: 48%;                 
+    background-color: variable.$color-blanco;                 
     text-align: left;
     transition: transform 0.3s ease;
     img {
@@ -28,14 +29,14 @@
     }
     h3 {
       font-size: 28px;
-      margin: 10px 0 5px;
+      margin: variable.$space-xs 0 5px;
     }
     .precios {
-      margin-bottom: 10px;
-      font-size: 20px;
+      margin-bottom: variable.$space-xs;
+      font-size: variable.$space-s;
     }
     &:hover {
-      transform: translateY(-5px); /* Efecto al pasar el mouse */
+      transform: variable.$hover-lift; /* Efecto al pasar el mouse */
     } 
   }   
 }

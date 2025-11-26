@@ -1,0 +1,31 @@
+/*--- COLORES ---*/ 
+// Colores Primarios //
+$color-negro: #000000;
+$color-blanco: #ffffff;
+
+
+// Colores Secundarios // Texto
+$color-gris-oscuro: #333;
+$color-gris-medio: #666666;
+$color-gris-claro: #ccc;
+$color-fondo-contacto: #e6e6e6;
+$color-border-divisor: #ddd;
+
+
+/*--- ESPACIADO (SPACING) ---*/ 
+$space-xs: 10px;    // Pequeño (e.g., input padding, gap)
+$space-s: 20px;     // Base (e.g., container padding, gap)
+$space-m: 30px;     // Medio (e.g., nav gap, margen mobile)
+$space-l: 60px;     // Grande (e.g., section padding, body margin)
+$space-xl: 100px;   // Extra grande (e.g., section padding bottom)
+
+
+/*--- FORMAS Y TRANSICIONES ---*/ 
+// Border Radius //
+$border-radius-base: 6px;    // Para inputs/imágenes
+$border-radius-btn: 25px;    // Para la mayoría de botones
+
+
+// Transiciones y Efectos //
+$transition-speed: 0.3s;
+$hover-lift: translateY(-5px); // Efecto de levantamiento en tarjetas

@@ -1,10 +1,12 @@
+@use'../base/variables' as variable; 
+
 /* --- RESPONSIVE --- */
 @media (max-width: 991px) {
   header .hamburguesa {
   display: block;
   }
   .container {
-    padding: 15px 20px;
+    padding: 15px variable.$space-s;
   }
   .navbar ul {
     gap: 15px;
@@ -33,7 +35,7 @@
   .footer-container {
     flex-direction: column;  
     align-items: flex-start;
-    gap: 20px;
+    gap: variable.$space-s;
   }
 
   .footer-columns {
@@ -100,7 +102,7 @@
 @media (max-width: 1024px) {
 
   body {
-    margin: 0 30px;
+    margin: 0 variable.$space-m;
   }
 
   .navbar ul {
@@ -121,7 +123,7 @@
   }
 
   .footer-columns {
-    gap: 60px;
+    gap: variable.$space-l;
   }
   
 }
@@ -170,12 +172,12 @@
 
   .footer-container {
     flex-direction: column;
-    gap: 30px;
+    gap: variable.$space-m;
   }
 
   .footer-columns {
     flex-direction: column;
-    gap: 20px;
+    gap: variable.$space-s;
   }
 
   
@@ -190,7 +192,7 @@
 
 @media (min-width: 1180px) {
   body {
-    margin: 0 60px;
+    margin: 0 variable.$space-l;
   }
 
   header .container {
@@ -214,10 +216,10 @@
 
 
   .btn-reservar {
-    background-color: black !important;
-    color: white !important;
+    background-color: variable.$color-negro !important;
+    color: variable.$color-blanco !important;
     border-radius: 25px;
-    padding: 8px 20px;
+    padding: 8px variable.$space-s;
     margin-left: 10px;
   }
 
@@ -229,7 +231,7 @@
 
   .navbar ul {
     display: flex;
-    gap: 20px;
+    gap: variable.$space-s;
   }
 
 
@@ -270,7 +272,7 @@
 
 @media (min-width: 360px) and (max-width: 480px) {
   body {
-    margin: 0 20px;
+    margin: 0 variable.$space-s;
   }
 
   header .container {
@@ -281,7 +283,7 @@
 
   .navbar ul {
     flex-direction: column;
-    gap: 10px;
+    gap: variable.$space-xs;
     align-items: center;
   }
 
@@ -291,7 +293,7 @@
   /* Asegurar que el botón quede centrado */
   #navbarSupportedContent .btn-reservar {
     display: block !important;
-    margin: 20px auto 10px auto !important;
+    margin: variable.$space-s auto variable.$space-xs auto !important;
     text-align: center !important;
   }
 
@@ -342,7 +344,7 @@
 
   .footer-columns {
     flex-direction: column;
-    gap: 10px;
+    gap: variable.$space-xs;
   }
 }
 
@@ -352,8 +354,8 @@
     flex-direction: column; /* Hace que la imagen y el texto se apilen */
     align-items: center; /* Centra los elementos */
     text-align: center;
-    padding: 20px;
-    gap: 30px;
+    padding: variable.$space-s;
+    gap: variable.$space-m;
   }
 
   .contenedor .texto {
