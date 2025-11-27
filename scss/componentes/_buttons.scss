@@ -44,10 +44,9 @@
   background-color: variable.$color-negro;
   color: variable.$color-blanco;
   text-decoration: none; /* 1. Elimina el subrayado si lo tiene */
-  color: $--color-negro;  /* 2. FUERZA el color del texto a negro */
+  color: variable.$color-negro;  /* 2. FUERZA el color del texto a negro */
 }
 }
-
 
 
 
