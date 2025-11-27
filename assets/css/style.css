@@ -185,12 +185,12 @@ header .hamburguesa {
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s;
+  text-decoration: none; /* 1. Elimina el subrayado si lo tiene */
+  color: #000000; /* 2. FUERZA el color del texto a negro */
 }
 .ver-todo:hover {
   background-color: #000000;
   color: #ffffff;
-  text-decoration: none; /* 1. Elimina el subrayado si lo tiene */
-  color: #000000; /* 2. FUERZA el color del texto a negro */
 }
 
 /* -- BOTON LEER MAS DE INDEX SOBRE NUESTRA MARCA -- */

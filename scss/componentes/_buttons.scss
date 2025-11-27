@@ -40,14 +40,13 @@
   cursor: pointer;
   font-weight: 500;
   transition: variable.$transition-speed;
+   text-decoration: none; /* 1. Elimina el subrayado si lo tiene */
+  color: variable.$color-negro;  /* 2. FUERZA el color del texto a negro */
     &:hover {
   background-color: variable.$color-negro;
   color: variable.$color-blanco;
-  text-decoration: none; /* 1. Elimina el subrayado si lo tiene */
-  color: variable.$color-negro;  /* 2. FUERZA el color del texto a negro */
 }
 }
-
 
 
 /* -- BOTON LEER MAS DE INDEX SOBRE NUESTRA MARCA -- */
