@@ -1,4 +1,5 @@
 @use'../base/variables' as variable; 
+@use'../base/extend';
 
 /* --- BOTÓN RESERVAR DEL NAV--- */
 .btn-reservar {
@@ -20,9 +21,7 @@
 /* --- BOTÓN VER TODO --- */
 
 .titulo-boton {
-  display: flex;
-  justify-content: space-between; /* Título a la izquierda, botón a la derecha */
-  align-items: center;
+  @extend %flex-space-between;
   margin-bottom: 30px;
   h2 {
   font-size: 2rem;
@@ -58,7 +57,7 @@
   border-radius: variable.$border-radius-btn;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: variable.$transition-speed;
     &:hover {
   background-color: variable.$color-gris-oscuro;
 }

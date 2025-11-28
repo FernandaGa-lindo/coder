@@ -1,4 +1,5 @@
 @use'../base/variables' as variable; 
+@use'../base/extend';
 
 /* --- HEADER GENERAL --- */
 header {
@@ -10,9 +11,7 @@ header {
   box-shadow: none;
   position: sticky;
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-space-between;
     padding: variable.$space-s 0px;
     }
   .hamburguesa {

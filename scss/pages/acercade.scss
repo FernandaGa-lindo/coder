@@ -1,9 +1,9 @@
+@use'../base/extend';
+
 /* EDICION ACERCA DE ACERCA DE (QUIENES SOMOS) */
 
 .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* los alinea arriba */
+    @extend %flex-space-start; /* los alinea arriba */
     gap: 40px;
     padding: 40px 0px;
     .texto { /* Texto a la izquierda */

@@ -1,5 +1,5 @@
 @use'../base/variables' as variable;
-
+@use'../base/extend';
 
 /* --- EDICION INDEX ---*/
 /* --- EDICION IMAGEN CABECERA --- */
@@ -49,11 +49,10 @@
         margin-left: 5px;
       }
     }
-    &:hover {
-  transform: variable.$hover-lift; /* Efecto al pasar el mouse */
+    @extend %card-base;
     }
   }
-}
+
 
 
 
@@ -93,11 +92,10 @@
       font-weight: bold;      /* Precio destacado */
       margin-bottom: variable.$space-xs;
     }
-    &:hover {
-      transform: variable.$hover-lift; 
+    @extend %card-base;
     }
   }
-}
+
 
 
 
@@ -108,9 +106,7 @@
   background-color: variable.$color-blanco;
   margin: 0 0 120px 0;
   .contenedor-marca {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-space-between;
     gap: variable.$space-l;
     .imagen-marca {
       img {

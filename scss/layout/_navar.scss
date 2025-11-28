@@ -1,13 +1,12 @@
 @use'../base/variables' as variable; 
+@use'../base/extend';
 
 /* --- CONTENEDOR PRINCIPAL --- */
 .container {
   max-width: 1400px;
   margin: auto;
   padding:variable.$space-s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-space-between;
   flex-wrap: wrap;
 }
 

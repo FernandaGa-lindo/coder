@@ -1,11 +1,10 @@
 @use'../base/variables' as variable;
+@use'../base/extend';
 
 /* --- FORMULARIO DE CONTACTANOS --- */
 .contacto {
   background-color: variable.$color-fondo-contacto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  @extend %flex-space-start;
   padding: variable.$space-l;
   gap: 40px;
   min-height: 500px;

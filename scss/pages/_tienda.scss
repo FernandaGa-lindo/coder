@@ -1,4 +1,5 @@
 @use'../base/variables' as variable; 
+@use'../base/extend';
 
 /* --- AQUI PONDRE TIENDA ---*/
 /* Contenedor que organiza las tarjetas */
@@ -20,7 +21,6 @@
   background-color: variable.$color-blanco;
   width: 48%;                 
   text-align: left;
-  transition: transform variable.$transition-speed ease;
   img {
     width: 100%;
   }
@@ -38,8 +38,7 @@
       margin-left: 5px;
     }
   }
-  &:hover {
-  transform: variable.$hover-lift;; 
+  @extend %card-base;
   }
-}
+
 

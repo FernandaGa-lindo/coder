@@ -1,4 +1,5 @@
 @use'../base/variables' as variable; 
+@use'../base/extend';
 
 /* --- EDICION DE SERVICIOS.HTML --- */
 /* --- EDICION IMAGEN CABECERA --- */
@@ -23,7 +24,6 @@
   .tarjetass {
     background-color: variable.$color-blanco;                 
     text-align: left;
-    transition: transform 0.3s ease;
     img {
       width: 100%;
     }
@@ -35,8 +35,6 @@
       margin-bottom: variable.$space-xs;
       font-size: variable.$space-s;
     }
-    &:hover {
-      transform: variable.$hover-lift; /* Efecto al pasar el mouse */
+    @extend %card-base;
     } 
   }   
-}

@@ -1,5 +1,5 @@
 @use'../base/variables' as variable; 
-
+@use'../base/extend';
 
 /* --- AQUI PONDRE LO DE RESERVAS --- */
 
@@ -42,9 +42,7 @@
     background: variable.$color-blanco;
     border-radius: 12px;
     padding: variable.$space-s 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-space-between;
     box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
     margin-bottom: 18px;
     border: 1px solid #eee;
@@ -63,7 +61,7 @@
       padding: variable.$space-xs 22px;
       border-radius: variable.$border-radius-base;
       cursor: pointer;
-      transition: 0.3s;
+      transition:  variable.$transition-speed;
       }
       &:hover {
         opacity: 0.8;

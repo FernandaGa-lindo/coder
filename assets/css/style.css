@@ -7,6 +7,28 @@ body {
   /*background-color: #a3a3a3;*/
 }
 
+/* Estilo base de tarjeta: transición y efecto hover */
+.tarjetass, .conten-nuestros .tarjetass, .contenedor-productos .tarjeta, .contenedor-nuestros .tarjetas {
+  transition: transform 0.2s ease;
+}
+.tarjetass:hover, .contenedor-productos .tarjeta:hover, .contenedor-nuestros .tarjetas:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo de Flexbox */
+.agenda .opcion-cita, .sobre-marca .contenedor-marca, .titulo-boton, .container, header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo de Flex-start */
+.contenedor, .contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 /*--- COLORES ---*/
 /*--- ESPACIADO (SPACING) ---*/
 /*--- FORMAS Y TRANSICIONES ---*/
@@ -21,9 +43,6 @@ header {
   position: sticky;
 }
 header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 0px;
 }
 header .hamburguesa {
@@ -35,9 +54,6 @@ header .hamburguesa {
   max-width: 1400px;
   margin: auto;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -166,9 +182,6 @@ header .hamburguesa {
 /* -- BOTON DE INDEX  -- */
 /* --- BOTÓN VER TODO --- */
 .titulo-boton {
-  display: flex;
-  justify-content: space-between; /* Título a la izquierda, botón a la derecha */
-  align-items: center;
   margin-bottom: 30px;
 }
 .titulo-boton h2 {
@@ -184,7 +197,7 @@ header .hamburguesa {
   border-radius: 25px;
   cursor: pointer;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.2s;
   color: #000000; /* 2. FUERZA el color del texto a negro */
 }
 .ver-todo:hover {
@@ -201,7 +214,7 @@ header .hamburguesa {
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .btn-leer-mas:hover {
   background-color: #333;
@@ -250,7 +263,7 @@ header .hamburguesa {
   border: none;
   border-radius: 25px;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .btn-reservar:hover {
   background-color: #333333 !important;
@@ -259,9 +272,6 @@ header .hamburguesa {
 /* --- FORMULARIO DE CONTACTANOS --- */
 .contacto {
   background-color: #e6e6e6;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 60px;
   gap: 40px;
   min-height: 500px;
@@ -358,9 +368,6 @@ header .hamburguesa {
   font-size: 0.9em;
   margin-left: 5px;
 }
-.contenedor-productos .tarjeta:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
-}
 
 /* --- AQUI VA NUESTROS SERVICIOS DE INDEX --- */
 /* Contenedor que organiza las tarjetas */
@@ -396,9 +403,6 @@ header .hamburguesa {
   font-weight: bold; /* Precio destacado */
   margin-bottom: 10px;
 }
-.contenedor-nuestros .tarjetas:hover {
-  transform: translateY(-5px);
-}
 
 /* --- AQUI VA SOBRE LA MARCA DE INDEX --- */
 .sobre-marca {
@@ -407,9 +411,6 @@ header .hamburguesa {
   margin: 0 0 120px 0;
 }
 .sobre-marca .contenedor-marca {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 60px;
 }
 .sobre-marca .contenedor-marca .imagen-marca img {
@@ -452,7 +453,6 @@ header .hamburguesa {
 .conten-nuestros .tarjetass {
   background-color: #ffffff;
   text-align: left;
-  transition: transform 0.3s ease;
 }
 .conten-nuestros .tarjetass img {
   width: 100%;
@@ -464,9 +464,6 @@ header .hamburguesa {
 .conten-nuestros .tarjetass .precios {
   margin-bottom: 10px;
   font-size: 20px;
-}
-.conten-nuestros .tarjetass:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
 }
 
 /* --- AQUI PONDRE TIENDA ---*/
@@ -490,7 +487,6 @@ header .hamburguesa {
   background-color: #ffffff;
   width: 48%;
   text-align: left;
-  transition: transform 0.3s ease;
 }
 .tarjetass img {
   width: 100%;
@@ -509,15 +505,10 @@ header .hamburguesa {
   font-size: 0.9em;
   margin-left: 5px;
 }
-.tarjetass:hover {
-  transform: translateY(-5px);
-}
 
 /* EDICION ACERCA DE ACERCA DE (QUIENES SOMOS) */
 .contenedor {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* los alinea arriba */
+  /* los alinea arriba */
   gap: 40px;
   padding: 40px 0px;
 }
@@ -632,9 +623,6 @@ header .hamburguesa {
   background: #ffffff;
   border-radius: 12px;
   padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
   margin-bottom: 18px;
   border: 1px solid #eee;
@@ -654,7 +642,7 @@ header .hamburguesa {
   padding: 10px 22px;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .agenda .opcion-cita:hover {
   opacity: 0.8;

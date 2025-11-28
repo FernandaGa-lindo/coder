@@ -1,0 +1,23 @@
+
+/* Estilo base de tarjeta: transición y efecto hover */
+%card-base {
+    transition: transform 0.2s ease; 
+    
+    &:hover {
+        transform: translateY(-5px); 
+    }
+}
+
+/* Estilo de Flexbox */
+%flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de Flex-start */
+%flex-space-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
