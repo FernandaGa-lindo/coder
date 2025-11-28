@@ -1,7 +1,1 @@
 
-// Mixin para dispositivos con ancho máximo de 900px
-@mixin tablet-down {
-    @media (max-width: 900px) {
-        @content; // @content permite inyectar estilos al llamar el mixin
-    }
-}
