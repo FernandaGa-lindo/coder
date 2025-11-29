@@ -1,5 +1,6 @@
 @use'../base/variables' as variable;
 @use'../base/extend';
+@use'../base/mixin';
 
 /* --- FORMULARIO DE CONTACTANOS --- */
 .contacto {
@@ -25,8 +26,7 @@
   }
   .formulario-contacto {
     flex: 1.1;
-    display: flex;
-    flex-direction: column;
+    @include mixin.flex(flex,column);
     gap: variable.$space-xs;
     .fila {
       display: flex;
