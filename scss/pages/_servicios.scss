@@ -1,6 +1,6 @@
 @use'../base/variables' as variable; 
 @use'../base/extend';
-
+@use'../base/mixins';
 /* --- EDICION DE SERVICIOS.HTML --- */
 /* --- EDICION IMAGEN CABECERA --- */
 
@@ -18,8 +18,7 @@
 /* Contenedor que organiza las tarjetas */
 .conten-nuestros {
   padding: 0 0 variable.$space-l 0;
-  display: flex;               
-  flex-wrap: wrap;           
+  @include mixins.flex-(flex,wrap);            
   gap: 49px; 
   .tarjetass {
     background-color: variable.$color-blanco;                 

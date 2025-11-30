@@ -1,4 +1,5 @@
 @use'../base/variables' as variable; 
+@use'../base/extend';
 
 /* AQUI VA EDICION DEL FOOTER */
 
@@ -12,9 +13,7 @@
 .footer-container {
   max-width: 1440px;          
   margin: 0 auto;             
-  display: flex;              
-  justify-content: space-between; 
-  align-items: flex-start;    
+  @extend %flex-space-start;
   gap: variable.$space-m; 
   .footer-brand {
         flex: 0 0 auto;            

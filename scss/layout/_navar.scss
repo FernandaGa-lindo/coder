@@ -1,5 +1,6 @@
 @use'../base/variables' as variable; 
 @use'../base/extend';
+@use'../base/mixins';
 
 /* --- CONTENEDOR PRINCIPAL --- */
 .container {
@@ -20,8 +21,7 @@
 
 /* --- NAVBAR (ANIDADO) --- */
 .navbar {
-  display: flex;
-  align-items: center;
+  @include mixins.align(flex,center);
   gap: variable.$space-m;
   flex-wrap: wrap;
   box-shadow: none !important;

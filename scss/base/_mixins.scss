@@ -1,0 +1,14 @@
+@mixin flex($display, $direction,){
+    display: $display;
+    flex-direction: $direction;
+}
+
+@mixin flex-($display, $wrap){
+    display: $display;
+    flex-wrap: $wrap;
+}
+
+@mixin align($display, $align){
+    display: $display;
+    align-items: $align;
+}

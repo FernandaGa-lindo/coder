@@ -1,18 +1,17 @@
 @use'../base/variables' as variable; 
 @use'../base/extend';
+@use'../base/mixins';
 
 /* --- AQUI PONDRE TIENDA ---*/
 /* Contenedor que organiza las tarjetas */
 .conten-productos1 {
   padding: variable.$space-m 0 variable.$space-l 0;
-  display: flex;              
-  flex-wrap: wrap;             
+  @include mixins.flex-(flex,wrap);             
   gap: 46px;                  
   }
   .conten-productos {
   padding: 0 0 variable.$space-l 0;
-  display: flex;              
-  flex-wrap: wrap;             
+  @include mixins.flex-(flex,wrap);             
   gap: 49px;                  
   }
   

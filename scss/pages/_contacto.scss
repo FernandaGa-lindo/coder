@@ -1,12 +1,12 @@
 @use'../base/variables' as variable; 
+@use'../base/mixins';
 
 /* --- AQUI PONDRE SECCION DE CONTACTO --- */
 /* --- SECCIÓN DE CONTACTO (Página Contacto) --- */
 
 .contact-section {
-  display: grid;
+  @include mixins.align(grid,start);
   grid-template-columns: 1fr 1fr;
-  align-items: start;
   gap: 90px;
   padding: 40px 0 variable.$space-xl 0;
   .contact-content {
