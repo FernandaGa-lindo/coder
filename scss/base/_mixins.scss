@@ -12,3 +12,9 @@
     display: $display;
     align-items: $align;
 }
+
+@mixin border($padding, $border, $borderradius){
+    padding: $padding;
+    border: $border;
+    border-radius: $borderradius;
+}

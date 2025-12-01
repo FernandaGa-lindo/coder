@@ -34,9 +34,7 @@
     input,
     textarea {
       width: 100%;
-      border: 1px solid variable.$color-negro;
-      border-radius: 6px;
-      padding: 14px 18px;
+      @include mixins.border(14px 18px, 1px solid variable.$color-negro, 6px);
       margin-bottom: 20px;
       font-size: 15px;
     }
