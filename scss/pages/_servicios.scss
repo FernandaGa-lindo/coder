@@ -16,6 +16,14 @@
 /* --- AQUI VA NUESTROS SERVICIOS de servicios ---*/
 
 /* Contenedor que organiza las tarjetas */
+
+.nuestros-servicios {
+  h1 {
+  margin: 150px 0 variable.$space-m 0;
+  padding:  0 0 variable.$space-s 0;
+  margin-bottom: variable.$space-s;
+  font-size: 53px;
+  }
 .conten-nuestros {
   padding: 0 0 variable.$space-l 0;
   @include mixins.flex-(flex,wrap);            
@@ -37,3 +45,4 @@
     @extend %card-base;
     } 
   }   
+}

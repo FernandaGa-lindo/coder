@@ -8,10 +8,10 @@ body {
 }
 
 /* Estilo base de tarjeta: transición y efecto hover */
-.tarjetass, .conten-nuestros .tarjetass, .contenedor-productos .tarjeta, .contenedor-nuestros .tarjetas {
+.tarjetass, .nuestros-servicios .conten-nuestros .tarjetass, .contenedor-productos .tarjeta, .contenedor-nuestros .tarjetas {
   transition: transform 0.2s ease;
 }
-.tarjetass:hover, .contenedor-productos .tarjeta:hover, .contenedor-nuestros .tarjetas:hover {
+.tarjetass:hover, .nuestros-servicios .conten-nuestros .tarjetass:hover, .contenedor-productos .tarjeta:hover, .contenedor-nuestros .tarjetas:hover {
   transform: translateY(-5px);
 }
 
@@ -371,7 +371,7 @@ header .hamburguesa {
 .nuestros-servicios h2 {
   margin: 150px 0 30px 0;
   padding: 0 0 20px 0;
-  font-size: 3em;
+  font-size: 53px;
   margin-bottom: 20px;
 }
 
@@ -441,24 +441,30 @@ header .hamburguesa {
 
 /* --- AQUI VA NUESTROS SERVICIOS de servicios ---*/
 /* Contenedor que organiza las tarjetas */
-.conten-nuestros {
+.nuestros-servicios h1 {
+  margin: 150px 0 30px 0;
+  padding: 0 0 20px 0;
+  margin-bottom: 20px;
+  font-size: 53px;
+}
+.nuestros-servicios .conten-nuestros {
   padding: 0 0 60px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 49px;
 }
-.conten-nuestros .tarjetass {
+.nuestros-servicios .conten-nuestros .tarjetass {
   background-color: #ffffff;
   text-align: left;
 }
-.conten-nuestros .tarjetass img {
+.nuestros-servicios .conten-nuestros .tarjetass img {
   width: 100%;
 }
-.conten-nuestros .tarjetass h3 {
+.nuestros-servicios .conten-nuestros .tarjetass h3 {
   font-size: 28px;
   margin: 10px 0 5px;
 }
-.conten-nuestros .tarjetass .precios {
+.nuestros-servicios .conten-nuestros .tarjetass .precios {
   margin-bottom: 10px;
   font-size: 20px;
 }
@@ -487,6 +493,10 @@ header .hamburguesa {
 }
 .tarjetass img {
   width: 100%;
+}
+.tarjetass h1 {
+  font-size: 28px;
+  margin: 10px 0 5px;
 }
 .tarjetass h3 {
   font-size: 28px;
