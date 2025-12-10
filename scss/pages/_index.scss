@@ -84,18 +84,9 @@
       font-size: 1.4em;
       margin: variable.$space-xs 0 5px;
     }
-    p {
-      font-size: 1.1em;
-      margin-bottom: 15px;
-    }
-    .precio {
-      font-weight: bold;      /* Precio destacado */
-      margin-bottom: variable.$space-xs;
-    }
     @extend %card-base;
     }
   }
-
 
 
 
@@ -112,7 +103,7 @@
       img {
         width: 100%;
         max-width: 500px;
-        border-radius: 10px;
+        border-radius: 5px;
         object-fit: cover;
       }
     }
