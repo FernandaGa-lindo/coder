@@ -939,6 +939,10 @@ header .hamburguesa {
   .quienes {
     font-size: 2rem; /* Título más proporcional */
   }
+  .titulo-boton {
+    margin-bottom: 30px;
+    padding: 0px 10px 0px 0px;
+  }
 }
 @media (max-width: 992px) {
   .btn-reservar {
