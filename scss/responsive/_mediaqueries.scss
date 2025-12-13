@@ -269,7 +269,7 @@
 
 /* --- MÓVIL (desde 360px a 480px) --- */
 
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 340px) and (max-width: 480px) {
   body {
     margin: 0 variable.$space-s;
   }

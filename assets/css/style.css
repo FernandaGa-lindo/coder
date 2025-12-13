@@ -851,7 +851,7 @@ header .hamburguesa {
   }
 }
 /* --- MÓVIL (desde 360px a 480px) --- */
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 340px) and (max-width: 480px) {
   body {
     margin: 0 20px;
   }
@@ -867,7 +867,7 @@ header .hamburguesa {
   }
   /* Centrar botón Reservar dentro del menú hamburguesa */
 }
-@media (min-width: 360px) and (max-width: 480px) and (max-width: 768px) {
+@media (min-width: 340px) and (max-width: 480px) and (max-width: 768px) {
   /* Asegurar que el botón quede centrado */
   #navbarSupportedContent .btn-reservar {
     display: block !important;
@@ -878,7 +878,7 @@ header .hamburguesa {
     margin-right: 0 !important;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 340px) and (max-width: 480px) {
   /* SECCIONES EN UNA SOLA COLUMNA */
   .contenedor-productos,
   .contenedor-nuestros,
