@@ -594,7 +594,7 @@ header .hamburguesa {
   flex: 1.3;
 }
 .citas-container .texto h1 {
-  font-size: 50px;
+  font-size: 43px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -701,16 +701,15 @@ header .hamburguesa {
   .contact-image {
     order: -1;
   }
+  .contacto .texto-contacto h2 {
+    font-size: 2rem;
+  }
 }
 /* Responsivo DE FORMULARIO DE CONTACTANOS */
 @media (max-width: 768px) {
   .contacto {
     flex-direction: column;
     align-items: center;
-  }
-  .texto-contacto,
-  .formulario-contacto {
-    max-width: 100%;
   }
   .fila {
     flex-direction: column;

@@ -58,6 +58,9 @@
   .contact-image {
     order: -1;
   }
+  .contacto .texto-contacto h2 {
+    font-size: 2.0rem;
+  }
 }
 
 
@@ -68,10 +71,6 @@
     align-items: center;
   }
 
-  .texto-contacto,
-  .formulario-contacto {
-    max-width: 100%;
-  }
 
   .fila {
     flex-direction: column;
