@@ -710,6 +710,7 @@ header .hamburguesa {
   .contacto {
     flex-direction: column;
     align-items: center;
+    padding: 40px;
   }
   .fila {
     flex-direction: column;
